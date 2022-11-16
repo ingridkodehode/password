@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=Libre+Franklin:wght@100&family=Monda&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Generate <span class="smaller-text">random passwords</span></h2>
+      <p class="herotext">Never use an insecure<br />password again</p>
+      <hr class="divider" />
+      <input type="text" name="" id="password" readonly />
+      <label class="container"
+        >Use special characters
+        <input
+          type="checkbox"
+          checked="checked"
+          id="check-el"
+          name="check-el"
+          value="yes"
+        />
+        <span class="checkmark"></span>
+      </label>
+      <div class="clicks">
+        <button id="button" class="btn1" onclick="genPassword()">Create</button>
+        <button id="button" class="btn2" onclick="copyPassword()">Copy</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

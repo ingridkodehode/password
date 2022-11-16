@@ -1,0 +1,146 @@
+body {
+  color: #291237;
+  background-color: #291237;
+  padding: 10px;
+}
+
+.divider {
+  border-top: 3px solid #c484ea;
+  border-radius: 5px;
+  border-bottom: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.box {
+  background-color: #f0c6ef;
+  border-radius: 30px 30px 0px 30px;
+  padding: 20px;
+  border-bottom: 5px solid #8a2be2;
+  border-right: 5px solid #8a2be2;
+  width: fit-content;
+  height: fit-content;
+}
+
+h2 {
+  font-family: "Cuprum", sans-serif;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #291237;
+  text-align: left;
+}
+
+.smaller-text {
+  font-family: "Monda", sans-serif;
+  font-size: 30px;
+  margin-top: 0px;
+  padding-top: 0px;
+  display: block;
+  color: #8a2be2;
+  text-align: left;
+}
+
+.herotext {
+  color: #8a2be2;
+  font-size: 30px;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: left;
+}
+
+#password {
+  display: flex;
+  text-align: center;
+  color: #291237;
+  background: #c484ea;
+  border: none;
+  border-radius: 30px;
+  font-family: "Monda", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 60px;
+  height: 60px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.clicks {
+  margin: 2%;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+}
+
+.btn1,
+.btn2 {
+  padding: 15px 60px;
+  color: #f0c6ef;
+  background: #8a2be2;
+  border: none;
+  border-radius: 40px;
+  font-family: "Monda", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 5px;
+}
+
+#button:hover {
+  color: #f0c6ef;
+  background-color: #291237;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 5px;
+  color: #8a2be2;
+  font-size: 19px;
+  font-family: "Libre Franklin", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c484ea;
+  border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #291237;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c484ea;
+}
